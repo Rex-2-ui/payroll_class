@@ -37,12 +37,33 @@ Partial Class Form1
         Label7 = New Label()
         Label8 = New Label()
         Label9 = New Label()
+        TextBox1 = New TextBox()
+        TextBox2 = New TextBox()
+        TextBox3 = New TextBox()
+        TextBox4 = New TextBox()
+        TextBox5 = New TextBox()
+        TextBox6 = New TextBox()
+        TextBox7 = New TextBox()
+        TextBox8 = New TextBox()
+        TextBox9 = New TextBox()
+        RadioButton1 = New RadioButton()
+        RadioButton2 = New RadioButton()
+        RadioButton3 = New RadioButton()
+        CheckBox1 = New CheckBox()
+        CheckBox2 = New CheckBox()
+        CheckBox3 = New CheckBox()
         GroupBox1.SuspendLayout()
+        GroupBox2.SuspendLayout()
         GroupBox3.SuspendLayout()
         SuspendLayout()
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.Controls.Add(TextBox5)
+        GroupBox1.Controls.Add(TextBox4)
+        GroupBox1.Controls.Add(TextBox3)
+        GroupBox1.Controls.Add(TextBox2)
+        GroupBox1.Controls.Add(TextBox1)
         GroupBox1.Controls.Add(Label5)
         GroupBox1.Controls.Add(Label4)
         GroupBox1.Controls.Add(Label3)
@@ -50,7 +71,7 @@ Partial Class Form1
         GroupBox1.Controls.Add(Label1)
         GroupBox1.Location = New Point(39, 12)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(905, 196)
+        GroupBox1.Size = New Size(905, 201)
         GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         GroupBox1.Text = "GroupBox1"
@@ -58,7 +79,7 @@ Partial Class Form1
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(411, 150)
+        Label5.Location = New Point(412, 163)
         Label5.Name = "Label5"
         Label5.Size = New Size(53, 20)
         Label5.TabIndex = 4
@@ -67,7 +88,7 @@ Partial Class Form1
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(411, 104)
+        Label4.Location = New Point(412, 111)
         Label4.Name = "Label4"
         Label4.Size = New Size(53, 20)
         Label4.TabIndex = 3
@@ -102,6 +123,12 @@ Partial Class Form1
         ' 
         ' GroupBox2
         ' 
+        GroupBox2.Controls.Add(CheckBox3)
+        GroupBox2.Controls.Add(CheckBox2)
+        GroupBox2.Controls.Add(CheckBox1)
+        GroupBox2.Controls.Add(RadioButton3)
+        GroupBox2.Controls.Add(RadioButton2)
+        GroupBox2.Controls.Add(RadioButton1)
         GroupBox2.Location = New Point(56, 230)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(279, 354)
@@ -111,6 +138,10 @@ Partial Class Form1
         ' 
         ' GroupBox3
         ' 
+        GroupBox3.Controls.Add(TextBox9)
+        GroupBox3.Controls.Add(TextBox8)
+        GroupBox3.Controls.Add(TextBox7)
+        GroupBox3.Controls.Add(TextBox6)
         GroupBox3.Controls.Add(Label9)
         GroupBox3.Controls.Add(Label6)
         GroupBox3.Controls.Add(Label8)
@@ -188,6 +219,132 @@ Partial Class Form1
         Label9.TabIndex = 8
         Label9.Text = "Label9"
         ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(171, 42)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(400, 27)
+        TextBox1.TabIndex = 5
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(171, 104)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(125, 27)
+        TextBox2.TabIndex = 6
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.Location = New Point(171, 163)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(125, 27)
+        TextBox3.TabIndex = 7
+        ' 
+        ' TextBox4
+        ' 
+        TextBox4.Location = New Point(519, 104)
+        TextBox4.Name = "TextBox4"
+        TextBox4.Size = New Size(125, 27)
+        TextBox4.TabIndex = 8
+        ' 
+        ' TextBox5
+        ' 
+        TextBox5.Location = New Point(519, 156)
+        TextBox5.Name = "TextBox5"
+        TextBox5.Size = New Size(125, 27)
+        TextBox5.TabIndex = 9
+        ' 
+        ' TextBox6
+        ' 
+        TextBox6.Location = New Point(184, 39)
+        TextBox6.Name = "TextBox6"
+        TextBox6.Size = New Size(125, 27)
+        TextBox6.TabIndex = 9
+        ' 
+        ' TextBox7
+        ' 
+        TextBox7.Location = New Point(184, 87)
+        TextBox7.Name = "TextBox7"
+        TextBox7.Size = New Size(125, 27)
+        TextBox7.TabIndex = 10
+        ' 
+        ' TextBox8
+        ' 
+        TextBox8.Location = New Point(184, 147)
+        TextBox8.Name = "TextBox8"
+        TextBox8.Size = New Size(125, 27)
+        TextBox8.TabIndex = 11
+        ' 
+        ' TextBox9
+        ' 
+        TextBox9.Location = New Point(184, 196)
+        TextBox9.Name = "TextBox9"
+        TextBox9.Size = New Size(125, 27)
+        TextBox9.TabIndex = 12
+        ' 
+        ' RadioButton1
+        ' 
+        RadioButton1.AutoSize = True
+        RadioButton1.Location = New Point(58, 58)
+        RadioButton1.Name = "RadioButton1"
+        RadioButton1.Size = New Size(121, 24)
+        RadioButton1.TabIndex = 0
+        RadioButton1.TabStop = True
+        RadioButton1.Text = "RadioButton1"
+        RadioButton1.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton2
+        ' 
+        RadioButton2.AutoSize = True
+        RadioButton2.Location = New Point(58, 107)
+        RadioButton2.Name = "RadioButton2"
+        RadioButton2.Size = New Size(121, 24)
+        RadioButton2.TabIndex = 1
+        RadioButton2.TabStop = True
+        RadioButton2.Text = "RadioButton2"
+        RadioButton2.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton3
+        ' 
+        RadioButton3.AutoSize = True
+        RadioButton3.Location = New Point(58, 162)
+        RadioButton3.Name = "RadioButton3"
+        RadioButton3.Size = New Size(121, 24)
+        RadioButton3.TabIndex = 2
+        RadioButton3.TabStop = True
+        RadioButton3.Text = "RadioButton3"
+        RadioButton3.UseVisualStyleBackColor = True
+        ' 
+        ' CheckBox1
+        ' 
+        CheckBox1.AutoSize = True
+        CheckBox1.Location = New Point(58, 228)
+        CheckBox1.Name = "CheckBox1"
+        CheckBox1.Size = New Size(103, 24)
+        CheckBox1.TabIndex = 3
+        CheckBox1.Text = "CheckBox1"
+        CheckBox1.UseVisualStyleBackColor = True
+        ' 
+        ' CheckBox2
+        ' 
+        CheckBox2.AutoSize = True
+        CheckBox2.Location = New Point(58, 273)
+        CheckBox2.Name = "CheckBox2"
+        CheckBox2.Size = New Size(103, 24)
+        CheckBox2.TabIndex = 4
+        CheckBox2.Text = "CheckBox2"
+        CheckBox2.UseVisualStyleBackColor = True
+        ' 
+        ' CheckBox3
+        ' 
+        CheckBox3.AutoSize = True
+        CheckBox3.Location = New Point(58, 320)
+        CheckBox3.Name = "CheckBox3"
+        CheckBox3.Size = New Size(103, 24)
+        CheckBox3.TabIndex = 5
+        CheckBox3.Text = "CheckBox3"
+        CheckBox3.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -203,6 +360,8 @@ Partial Class Form1
         Text = "Form1"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
+        GroupBox2.ResumeLayout(False)
+        GroupBox2.PerformLayout()
         GroupBox3.ResumeLayout(False)
         GroupBox3.PerformLayout()
         ResumeLayout(False)
@@ -223,5 +382,20 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents TextBox6 As TextBox
 
 End Class
