@@ -3,7 +3,7 @@
         Dim ExitMessage As String ExitMessage = "Are you sure you want to exit?" If MessageBox.Show(ExitMessage, "Exit", MessageBoxButtons.YesNo) = DialogResult.Yes Then Application.Exit() End If
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles DepartmentLabel.Click
 
     End Sub
 End Class

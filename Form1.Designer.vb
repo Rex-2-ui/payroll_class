@@ -22,21 +22,21 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        GroupBox1 = New GroupBox()
-        Label5 = New Label()
-        Label4 = New Label()
-        Label3 = New Label()
-        Label2 = New Label()
-        Label1 = New Label()
-        GroupBox2 = New GroupBox()
+        EmployeeInformationGroupBox = New GroupBox()
+        PayRateLabel = New Label()
+        HoursWorkedLabel = New Label()
+        DepartmentLabel = New Label()
+        EmployeeIDLabel = New Label()
+        NameLabel = New Label()
+        BenefitsGroupBox = New GroupBox()
         GroupBox3 = New GroupBox()
         ComputeButton = New Button()
         ResetButton = New Button()
         ExitButton = New Button()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label8 = New Label()
-        Label9 = New Label()
+        GrossPayLabel = New Label()
+        FederalTaxLabel = New Label()
+        BenefitsLabel = New Label()
+        NetPayLabel = New Label()
         TextBox1 = New TextBox()
         TextBox2 = New TextBox()
         TextBox3 = New TextBox()
@@ -46,95 +46,97 @@ Partial Class Form1
         TextBox7 = New TextBox()
         TextBox8 = New TextBox()
         TextBox9 = New TextBox()
-        RadioButton1 = New RadioButton()
-        RadioButton2 = New RadioButton()
-        RadioButton3 = New RadioButton()
-        CheckBox1 = New CheckBox()
-        CheckBox2 = New CheckBox()
-        CheckBox3 = New CheckBox()
-        GroupBox1.SuspendLayout()
-        GroupBox2.SuspendLayout()
+        NoRetirementPlanRadioButton = New RadioButton()
+        RetirementStandardRadioButton = New RadioButton()
+        Retirement401ARadioButton = New RadioButton()
+        MedicalInsureranceCheckBox = New CheckBox()
+        LifeInsuranceCheckBox = New CheckBox()
+        DentalInsuranceCheckBox = New CheckBox()
+        EmployeeInformationGroupBox.SuspendLayout()
+        BenefitsGroupBox.SuspendLayout()
         GroupBox3.SuspendLayout()
         SuspendLayout()
         ' 
-        ' GroupBox1
+        ' EmployeeInformationGroupBox
         ' 
-        GroupBox1.Controls.Add(TextBox5)
-        GroupBox1.Controls.Add(TextBox4)
-        GroupBox1.Controls.Add(TextBox3)
-        GroupBox1.Controls.Add(TextBox2)
-        GroupBox1.Controls.Add(TextBox1)
-        GroupBox1.Controls.Add(Label5)
-        GroupBox1.Controls.Add(Label4)
-        GroupBox1.Controls.Add(Label3)
-        GroupBox1.Controls.Add(Label2)
-        GroupBox1.Controls.Add(Label1)
-        GroupBox1.Location = New Point(39, 12)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(905, 201)
-        GroupBox1.TabIndex = 0
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "GroupBox1"
+        EmployeeInformationGroupBox.Controls.Add(TextBox5)
+        EmployeeInformationGroupBox.Controls.Add(TextBox4)
+        EmployeeInformationGroupBox.Controls.Add(TextBox3)
+        EmployeeInformationGroupBox.Controls.Add(TextBox2)
+        EmployeeInformationGroupBox.Controls.Add(TextBox1)
+        EmployeeInformationGroupBox.Controls.Add(PayRateLabel)
+        EmployeeInformationGroupBox.Controls.Add(HoursWorkedLabel)
+        EmployeeInformationGroupBox.Controls.Add(DepartmentLabel)
+        EmployeeInformationGroupBox.Controls.Add(EmployeeIDLabel)
+        EmployeeInformationGroupBox.Controls.Add(NameLabel)
+        EmployeeInformationGroupBox.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        EmployeeInformationGroupBox.Location = New Point(39, 12)
+        EmployeeInformationGroupBox.Name = "EmployeeInformationGroupBox"
+        EmployeeInformationGroupBox.Size = New Size(905, 201)
+        EmployeeInformationGroupBox.TabIndex = 0
+        EmployeeInformationGroupBox.TabStop = False
+        EmployeeInformationGroupBox.Text = "Employee Information"
         ' 
-        ' Label5
+        ' PayRateLabel
         ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(412, 163)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(53, 20)
-        Label5.TabIndex = 4
-        Label5.Text = "Label5"
+        PayRateLabel.AutoSize = True
+        PayRateLabel.Location = New Point(412, 163)
+        PayRateLabel.Name = "PayRateLabel"
+        PayRateLabel.Size = New Size(68, 20)
+        PayRateLabel.TabIndex = 4
+        PayRateLabel.Text = "Pay Rate"
         ' 
-        ' Label4
+        ' HoursWorkedLabel
         ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(412, 111)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(53, 20)
-        Label4.TabIndex = 3
-        Label4.Text = "Label4"
+        HoursWorkedLabel.AutoSize = True
+        HoursWorkedLabel.Location = New Point(412, 111)
+        HoursWorkedLabel.Name = "HoursWorkedLabel"
+        HoursWorkedLabel.Size = New Size(108, 20)
+        HoursWorkedLabel.TabIndex = 3
+        HoursWorkedLabel.Text = "Hours Worked"
         ' 
-        ' Label3
+        ' DepartmentLabel
         ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(39, 164)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(53, 20)
-        Label3.TabIndex = 2
-        Label3.Text = "Label3"
+        DepartmentLabel.AutoSize = True
+        DepartmentLabel.Location = New Point(39, 164)
+        DepartmentLabel.Name = "DepartmentLabel"
+        DepartmentLabel.Size = New Size(95, 20)
+        DepartmentLabel.TabIndex = 2
+        DepartmentLabel.Text = "Department:"
         ' 
-        ' Label2
+        ' EmployeeIDLabel
         ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(39, 104)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(53, 20)
-        Label2.TabIndex = 1
-        Label2.Text = "Label2"
+        EmployeeIDLabel.AutoSize = True
+        EmployeeIDLabel.Location = New Point(39, 104)
+        EmployeeIDLabel.Name = "EmployeeIDLabel"
+        EmployeeIDLabel.Size = New Size(95, 20)
+        EmployeeIDLabel.TabIndex = 1
+        EmployeeIDLabel.Text = "Employee ID"
         ' 
-        ' Label1
+        ' NameLabel
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(39, 42)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(53, 20)
-        Label1.TabIndex = 0
-        Label1.Text = "Label1"
+        NameLabel.AutoSize = True
+        NameLabel.Location = New Point(39, 42)
+        NameLabel.Name = "NameLabel"
+        NameLabel.Size = New Size(54, 20)
+        NameLabel.TabIndex = 0
+        NameLabel.Text = "Name:"
         ' 
-        ' GroupBox2
+        ' BenefitsGroupBox
         ' 
-        GroupBox2.Controls.Add(CheckBox3)
-        GroupBox2.Controls.Add(CheckBox2)
-        GroupBox2.Controls.Add(CheckBox1)
-        GroupBox2.Controls.Add(RadioButton3)
-        GroupBox2.Controls.Add(RadioButton2)
-        GroupBox2.Controls.Add(RadioButton1)
-        GroupBox2.Location = New Point(56, 230)
-        GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(279, 354)
-        GroupBox2.TabIndex = 1
-        GroupBox2.TabStop = False
-        GroupBox2.Text = "GroupBox2"
+        BenefitsGroupBox.Controls.Add(DentalInsuranceCheckBox)
+        BenefitsGroupBox.Controls.Add(LifeInsuranceCheckBox)
+        BenefitsGroupBox.Controls.Add(MedicalInsureranceCheckBox)
+        BenefitsGroupBox.Controls.Add(Retirement401ARadioButton)
+        BenefitsGroupBox.Controls.Add(RetirementStandardRadioButton)
+        BenefitsGroupBox.Controls.Add(NoRetirementPlanRadioButton)
+        BenefitsGroupBox.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BenefitsGroupBox.Location = New Point(56, 230)
+        BenefitsGroupBox.Name = "BenefitsGroupBox"
+        BenefitsGroupBox.Size = New Size(279, 354)
+        BenefitsGroupBox.TabIndex = 1
+        BenefitsGroupBox.TabStop = False
+        BenefitsGroupBox.Text = "Benefits"
         ' 
         ' GroupBox3
         ' 
@@ -142,10 +144,10 @@ Partial Class Form1
         GroupBox3.Controls.Add(TextBox8)
         GroupBox3.Controls.Add(TextBox7)
         GroupBox3.Controls.Add(TextBox6)
-        GroupBox3.Controls.Add(Label9)
-        GroupBox3.Controls.Add(Label6)
-        GroupBox3.Controls.Add(Label8)
-        GroupBox3.Controls.Add(Label7)
+        GroupBox3.Controls.Add(NetPayLabel)
+        GroupBox3.Controls.Add(GrossPayLabel)
+        GroupBox3.Controls.Add(BenefitsLabel)
+        GroupBox3.Controls.Add(FederalTaxLabel)
         GroupBox3.Location = New Point(374, 230)
         GroupBox3.Name = "GroupBox3"
         GroupBox3.Size = New Size(375, 241)
@@ -183,41 +185,41 @@ Partial Class Form1
         ExitButton.Text = "Exit"
         ExitButton.UseVisualStyleBackColor = True
         ' 
-        ' Label6
+        ' GrossPayLabel
         ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(45, 39)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(53, 20)
-        Label6.TabIndex = 5
-        Label6.Text = "Label6"
+        GrossPayLabel.AutoSize = True
+        GrossPayLabel.Location = New Point(45, 39)
+        GrossPayLabel.Name = "GrossPayLabel"
+        GrossPayLabel.Size = New Size(71, 20)
+        GrossPayLabel.TabIndex = 5
+        GrossPayLabel.Text = "Gross Pay"
         ' 
-        ' Label7
+        ' FederalTaxLabel
         ' 
-        Label7.AutoSize = True
-        Label7.Location = New Point(45, 94)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(53, 20)
-        Label7.TabIndex = 6
-        Label7.Text = "Label7"
+        FederalTaxLabel.AutoSize = True
+        FederalTaxLabel.Location = New Point(45, 94)
+        FederalTaxLabel.Name = "FederalTaxLabel"
+        FederalTaxLabel.Size = New Size(83, 20)
+        FederalTaxLabel.TabIndex = 6
+        FederalTaxLabel.Text = "Federal Tax"
         ' 
-        ' Label8
+        ' BenefitsLabel
         ' 
-        Label8.AutoSize = True
-        Label8.Location = New Point(45, 147)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(53, 20)
-        Label8.TabIndex = 7
-        Label8.Text = "Label8"
+        BenefitsLabel.AutoSize = True
+        BenefitsLabel.Location = New Point(45, 147)
+        BenefitsLabel.Name = "BenefitsLabel"
+        BenefitsLabel.Size = New Size(62, 20)
+        BenefitsLabel.TabIndex = 7
+        BenefitsLabel.Text = "Benefits"
         ' 
-        ' Label9
+        ' NetPayLabel
         ' 
-        Label9.AutoSize = True
-        Label9.Location = New Point(45, 196)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(53, 20)
-        Label9.TabIndex = 8
-        Label9.Text = "Label9"
+        NetPayLabel.AutoSize = True
+        NetPayLabel.Location = New Point(45, 196)
+        NetPayLabel.Name = "NetPayLabel"
+        NetPayLabel.Size = New Size(59, 20)
+        NetPayLabel.TabIndex = 8
+        NetPayLabel.Text = "Net Pay"
         ' 
         ' TextBox1
         ' 
@@ -282,68 +284,68 @@ Partial Class Form1
         TextBox9.Size = New Size(125, 27)
         TextBox9.TabIndex = 12
         ' 
-        ' RadioButton1
+        ' NoRetirementPlanRadioButton
         ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(58, 58)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(121, 24)
-        RadioButton1.TabIndex = 0
-        RadioButton1.TabStop = True
-        RadioButton1.Text = "RadioButton1"
-        RadioButton1.UseVisualStyleBackColor = True
+        NoRetirementPlanRadioButton.AutoSize = True
+        NoRetirementPlanRadioButton.Location = New Point(58, 58)
+        NoRetirementPlanRadioButton.Name = "NoRetirementPlanRadioButton"
+        NoRetirementPlanRadioButton.Size = New Size(164, 24)
+        NoRetirementPlanRadioButton.TabIndex = 0
+        NoRetirementPlanRadioButton.TabStop = True
+        NoRetirementPlanRadioButton.Text = "No Retirement Plan"
+        NoRetirementPlanRadioButton.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton2
+        ' RetirementStandardRadioButton
         ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(58, 107)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(121, 24)
-        RadioButton2.TabIndex = 1
-        RadioButton2.TabStop = True
-        RadioButton2.Text = "RadioButton2"
-        RadioButton2.UseVisualStyleBackColor = True
+        RetirementStandardRadioButton.AutoSize = True
+        RetirementStandardRadioButton.Location = New Point(58, 107)
+        RetirementStandardRadioButton.Name = "RetirementStandardRadioButton"
+        RetirementStandardRadioButton.Size = New Size(181, 24)
+        RetirementStandardRadioButton.TabIndex = 1
+        RetirementStandardRadioButton.TabStop = True
+        RetirementStandardRadioButton.Text = "Retirement - Standard"
+        RetirementStandardRadioButton.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton3
+        ' Retirement401ARadioButton
         ' 
-        RadioButton3.AutoSize = True
-        RadioButton3.Location = New Point(58, 162)
-        RadioButton3.Name = "RadioButton3"
-        RadioButton3.Size = New Size(121, 24)
-        RadioButton3.TabIndex = 2
-        RadioButton3.TabStop = True
-        RadioButton3.Text = "RadioButton3"
-        RadioButton3.UseVisualStyleBackColor = True
+        Retirement401ARadioButton.AutoSize = True
+        Retirement401ARadioButton.Location = New Point(58, 162)
+        Retirement401ARadioButton.Name = "Retirement401ARadioButton"
+        Retirement401ARadioButton.Size = New Size(123, 24)
+        Retirement401ARadioButton.TabIndex = 2
+        Retirement401ARadioButton.TabStop = True
+        Retirement401ARadioButton.Text = "RadioButton3"
+        Retirement401ARadioButton.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox1
+        ' MedicalInsureranceCheckBox
         ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.Location = New Point(58, 228)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(103, 24)
-        CheckBox1.TabIndex = 3
-        CheckBox1.Text = "CheckBox1"
-        CheckBox1.UseVisualStyleBackColor = True
+        MedicalInsureranceCheckBox.AutoSize = True
+        MedicalInsureranceCheckBox.Location = New Point(58, 228)
+        MedicalInsureranceCheckBox.Name = "MedicalInsureranceCheckBox"
+        MedicalInsureranceCheckBox.Size = New Size(155, 24)
+        MedicalInsureranceCheckBox.TabIndex = 3
+        MedicalInsureranceCheckBox.Text = "Medical Insurance"
+        MedicalInsureranceCheckBox.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox2
+        ' LifeInsuranceCheckBox
         ' 
-        CheckBox2.AutoSize = True
-        CheckBox2.Location = New Point(58, 273)
-        CheckBox2.Name = "CheckBox2"
-        CheckBox2.Size = New Size(103, 24)
-        CheckBox2.TabIndex = 4
-        CheckBox2.Text = "CheckBox2"
-        CheckBox2.UseVisualStyleBackColor = True
+        LifeInsuranceCheckBox.AutoSize = True
+        LifeInsuranceCheckBox.Location = New Point(58, 273)
+        LifeInsuranceCheckBox.Name = "LifeInsuranceCheckBox"
+        LifeInsuranceCheckBox.Size = New Size(125, 24)
+        LifeInsuranceCheckBox.TabIndex = 4
+        LifeInsuranceCheckBox.Text = "Life Insurance"
+        LifeInsuranceCheckBox.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox3
+        ' DentalInsuranceCheckBox
         ' 
-        CheckBox3.AutoSize = True
-        CheckBox3.Location = New Point(58, 320)
-        CheckBox3.Name = "CheckBox3"
-        CheckBox3.Size = New Size(103, 24)
-        CheckBox3.TabIndex = 5
-        CheckBox3.Text = "CheckBox3"
-        CheckBox3.UseVisualStyleBackColor = True
+        DentalInsuranceCheckBox.AutoSize = True
+        DentalInsuranceCheckBox.Location = New Point(58, 320)
+        DentalInsuranceCheckBox.Name = "DentalInsuranceCheckBox"
+        DentalInsuranceCheckBox.Size = New Size(146, 24)
+        DentalInsuranceCheckBox.TabIndex = 5
+        DentalInsuranceCheckBox.Text = "Dental Insurance"
+        DentalInsuranceCheckBox.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
@@ -354,45 +356,45 @@ Partial Class Form1
         Controls.Add(ResetButton)
         Controls.Add(ComputeButton)
         Controls.Add(GroupBox3)
-        Controls.Add(GroupBox2)
-        Controls.Add(GroupBox1)
+        Controls.Add(BenefitsGroupBox)
+        Controls.Add(EmployeeInformationGroupBox)
         Name = "Form1"
         Text = "Form1"
-        GroupBox1.ResumeLayout(False)
-        GroupBox1.PerformLayout()
-        GroupBox2.ResumeLayout(False)
-        GroupBox2.PerformLayout()
+        EmployeeInformationGroupBox.ResumeLayout(False)
+        EmployeeInformationGroupBox.PerformLayout()
+        BenefitsGroupBox.ResumeLayout(False)
+        BenefitsGroupBox.PerformLayout()
         GroupBox3.ResumeLayout(False)
         GroupBox3.PerformLayout()
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents EmployeeInformationGroupBox As GroupBox
+    Friend WithEvents BenefitsGroupBox As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents ComputeButton As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents EmployeeIDLabel As Label
+    Friend WithEvents NameLabel As Label
     Friend WithEvents ResetButton As Button
     Friend WithEvents ExitButton As Button
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents PayRateLabel As Label
+    Friend WithEvents HoursWorkedLabel As Label
+    Friend WithEvents DepartmentLabel As Label
+    Friend WithEvents NetPayLabel As Label
+    Friend WithEvents GrossPayLabel As Label
+    Friend WithEvents BenefitsLabel As Label
+    Friend WithEvents FederalTaxLabel As Label
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents DentalInsuranceCheckBox As CheckBox
+    Friend WithEvents LifeInsuranceCheckBox As CheckBox
+    Friend WithEvents MedicalInsureranceCheckBox As CheckBox
+    Friend WithEvents Retirement401ARadioButton As RadioButton
+    Friend WithEvents RetirementStandardRadioButton As RadioButton
+    Friend WithEvents NoRetirementPlanRadioButton As RadioButton
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox7 As TextBox
