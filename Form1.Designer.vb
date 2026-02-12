@@ -59,6 +59,7 @@ Partial Class Form1
         ' 
         ' EmployeeInformationGroupBox
         ' 
+        EmployeeInformationGroupBox.BackColor = Color.SandyBrown
         EmployeeInformationGroupBox.Controls.Add(TextBox5)
         EmployeeInformationGroupBox.Controls.Add(TextBox4)
         EmployeeInformationGroupBox.Controls.Add(TextBox3)
@@ -124,6 +125,7 @@ Partial Class Form1
         ' 
         ' BenefitsGroupBox
         ' 
+        BenefitsGroupBox.BackColor = Color.SandyBrown
         BenefitsGroupBox.Controls.Add(DentalInsuranceCheckBox)
         BenefitsGroupBox.Controls.Add(LifeInsuranceCheckBox)
         BenefitsGroupBox.Controls.Add(MedicalInsureranceCheckBox)
@@ -140,6 +142,7 @@ Partial Class Form1
         ' 
         ' GroupBox3
         ' 
+        GroupBox3.BackColor = Color.SandyBrown
         GroupBox3.Controls.Add(TextBox9)
         GroupBox3.Controls.Add(TextBox8)
         GroupBox3.Controls.Add(TextBox7)
@@ -157,33 +160,36 @@ Partial Class Form1
         ' 
         ' ComputeButton
         ' 
+        ComputeButton.BackColor = Color.SandyBrown
         ComputeButton.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         ComputeButton.Location = New Point(389, 539)
         ComputeButton.Name = "ComputeButton"
         ComputeButton.Size = New Size(115, 45)
         ComputeButton.TabIndex = 3
         ComputeButton.Text = "Compute"
-        ComputeButton.UseVisualStyleBackColor = True
+        ComputeButton.UseVisualStyleBackColor = False
         ' 
         ' ResetButton
         ' 
+        ResetButton.BackColor = Color.SandyBrown
         ResetButton.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         ResetButton.Location = New Point(523, 539)
         ResetButton.Name = "ResetButton"
         ResetButton.Size = New Size(103, 45)
         ResetButton.TabIndex = 4
         ResetButton.Text = "Reset"
-        ResetButton.UseVisualStyleBackColor = True
+        ResetButton.UseVisualStyleBackColor = False
         ' 
         ' ExitButton
         ' 
+        ExitButton.BackColor = Color.SandyBrown
         ExitButton.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         ExitButton.Location = New Point(653, 539)
         ExitButton.Name = "ExitButton"
         ExitButton.Size = New Size(134, 45)
         ExitButton.TabIndex = 5
         ExitButton.Text = "Exit"
-        ExitButton.UseVisualStyleBackColor = True
+        ExitButton.UseVisualStyleBackColor = False
         ' 
         ' GrossPayLabel
         ' 
@@ -351,6 +357,7 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.Bisque
         ClientSize = New Size(1014, 657)
         Controls.Add(ExitButton)
         Controls.Add(ResetButton)
